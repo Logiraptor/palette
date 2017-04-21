@@ -19,7 +19,7 @@ type box struct {
 
 var _ draw.Quantizer = &ColorCut{}
 
-// Quantize implements color
+// Quantize implements image/draw.Quantizer
 func (c *ColorCut) Quantize(p color.Palette, m image.Image) color.Palette {
 	bounds := m.Bounds()
 	colors := make([]color.RGBA, bounds.Dx()*bounds.Dy())
