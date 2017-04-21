@@ -78,8 +78,8 @@ func colorEqual(a, b color.Color) bool {
 func TestBoxFit(t *testing.T) {
 	b := box{
 		colors: []color.RGBA{
-			color.RGBA{1, 2, 3, 4},
-			color.RGBA{12, 11, 10, 9},
+			{1, 2, 3, 4},
+			{12, 11, 10, 9},
 		},
 	}
 	b.fit()
